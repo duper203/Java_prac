@@ -1,3 +1,8 @@
+//(1)구분할 수 있는 변수를 하나 줘서 4번일 때 값 변경 후 break 하고 스위치 문 밖에서 해당 값이 종료값일 때 다시 break하면 될 거에요. 
+//(2) 또는 자바에서는 break label문 사용하면 되는데 해당 문법은 제가 수업시간에 별도로 설명을 하진 않아서요.
+
+// 아아 왜 (1) 생각 왜 못함!! 다음에는 이런거 모르지 않기!!
+
 package Lab04;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -35,8 +40,10 @@ public class BookTest2 {
 
 	public static void main(String[] args) {
 		ArrayList<Book> b = new ArrayList<Book>();
+		
+		int a =0;
 
-		while(true) {
+		while(a != 1) {
 			Scanner scan = new Scanner(System.in);
 			System.out.println("===============================");
 			System.out.println("1. 책 등록 ");
@@ -79,6 +86,7 @@ public class BookTest2 {
 					break;
 
 				case 4:
+					a = 1;
 					break;
 				}
 			
